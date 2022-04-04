@@ -2,8 +2,8 @@ import { Routes, Route } from 'react-router-dom'
 
 import AppLayout from '../layouts/AppLayout'
 
-import LandingView from './views/LandingView'
-import NotFound from './views/NotFound'
+import LandingView from '../views/LandingView'
+import NotFound from '../views/NotFound'
 
 export default function AppRouter() {
   return (
