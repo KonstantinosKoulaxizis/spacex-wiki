@@ -1,4 +1,6 @@
-import { Routes, Route, Outlet } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
+
+import AppLayout from '../layouts/AppLayout'
 
 import LandingView from './views/LandingView'
 import NotFound from './views/NotFound'
@@ -7,7 +9,7 @@ export default function AppRouter() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/" element={<AppLayout />}>
           <Route index element={<LandingView />} />
         </Route>
         <Route path="404" element={<NotFound />} />
@@ -17,12 +19,3 @@ export default function AppRouter() {
   )
 }
 
-const Layout = () => {
-  return (
-    <div>
-      {/* <TopBar /> */}
-      {/* <SideDrawer> */}
-      <Outlet />
-    </div>
-  )
-}
