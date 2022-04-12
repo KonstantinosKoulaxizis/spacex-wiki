@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 
 import ResourceRoutesEnum from '../../models/enums/ResourceRoutesEmu'
+import ResourceView from '../../components/ResourceView'
 
 const ResourcesList = () => {
   const navigate = useNavigate()
@@ -13,7 +14,11 @@ const ResourcesList = () => {
       navigate('../404')
     }
   }, [navigate, resource, resourceRoutes])
-  return <div>ResourcesList</div>
+  return (
+    <div>
+      <ResourceView />
+    </div>
+  )
 }
 
 export default ResourcesList
