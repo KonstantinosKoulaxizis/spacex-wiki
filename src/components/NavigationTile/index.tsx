@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import NavigationTileInterface from '../../interfaces/NavigationTileInterface'
+import NavigationTileInterface from '../../models/interfaces/NavigationTileInterface'
 
 const NavigationTile: FunctionComponent<NavigationTileInterface> = ({
   tileText,

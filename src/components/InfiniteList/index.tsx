@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react'
 
 import { FunctionComponent } from 'react'
-import InfiniteListInterface from '../../interfaces/InfiniteListInterface'
+import InfiniteListInterface from '../../models/interfaces/InfiniteListInterface'
 
 function isBottom(ref: React.RefObject<HTMLDivElement>) {
   if (!ref.current) {
